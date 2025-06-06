@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-prd {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-prd {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Default LTR styles */
+body,
+html,
+[dir="ltr"] {
+  text-align: left;
+  direction: ltr;
+}
+
+/* RTL styles when Arabic is active */
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+[dir="rtl"] .nav-links {
+  flex-direction: row-reverse;
+}
+
+/* Button alignment fix example */
+[dir="rtl"] .lang-btn {
+  margin-left: 0;
+  margin-right: 15px;
+}

@@ -1,0 +1,118 @@
+{
+  "appName": {
+    "en": "Rami Cafe",
+    "ar": "رامي كافيه"
+  },
+  "products": {
+    "en": "Products",
+    "ar": "المنتجات"
+  },
+  "add_product": {
+    "en": "Add a Product",
+    "ar": "أضف منتجًا"
+  },
+  "product_name": {
+    "en": "Product Name",
+    "ar": "اسم المنتج"
+  },
+  "price": {
+    "en": "Price",
+    "ar": "السعر"
+  },
+  "type": {
+    "en": "Type",
+    "ar": "النوع"
+  },
+  "select_type": {
+    "en": "Select Type",
+    "ar": "اختر النوع"
+  },
+  "food": {
+    "en": "Food",
+    "ar": "طعام"
+  },
+  "drink": {
+    "en": "Drink",
+    "ar": "مشروب"
+  },
+  "dessert": {
+    "en": "Dessert",
+    "ar": "حلوى"
+  },
+  "snack": {
+    "en": "Snack",
+    "ar": "وجبة خفيفة"
+  },
+  "select_image": {
+    "en": "Select Product image",
+    "ar": "اختر صورة المنتج"
+  },
+  "delete": {
+    "en": "Delete",
+    "ar": "حذف"
+  },
+  "add_to_table": {
+    "en": "Add to Table",
+    "ar": "أضف إلى الطاولة"
+  },
+  "selectTableFirst": {
+    "en": "Please select a table first.",
+    "ar": "يرجى اختيار طاولة أولاً."
+  },
+  "failedToAdd": {
+    "en": "Failed to add product to table.",
+    "ar": "فشل في إضافة المنتج إلى الطاولة."
+  },
+  "products_for_table": {
+    "en": "Products for Table",
+    "ar": "المنتجات للطاولة"
+  },
+  "no_products_yet": {
+    "en": "No products yet.",
+    "ar": "لا توجد منتجات بعد."
+  },
+  "qty": {
+    "en": "Qty",
+    "ar": "عدد"
+  },
+  "pending": {
+    "en": "Pending",
+    "ar": "قيد الانتظار"
+  },
+  "served": {
+    "en": "Served",
+    "ar": "تم التقديم"
+  },
+  "add_table": {
+    "en": "Add Table",
+    "ar": "إضافة طاولة"
+  },
+  "create_new_table": {
+    "en": "Create New Table",
+    "ar": "إنشاء طاولة جديدة"
+  },
+  "enter_table_name": {
+    "en": "Enter table name",
+    "ar": "أدخل اسم الطاولة"
+  },
+  "cancel": {
+    "en": "Cancel",
+    "ar": "إلغاء"
+  },
+  "create": {
+    "en": "Create",
+    "ar": "إنشاء"
+  },
+  "confirm_delete_table": {
+    "en": "Are you sure you want to delete this table?",
+    "ar": "هل أنت متأكد أنك تريد حذف هذه الطاولة؟"
+  },
+  "create_table_failed": {
+    "en": "Failed to create table.",
+    "ar": "فشل في إنشاء الطاولة."
+  },
+  "delete_table_failed": {
+    "en": "Failed to delete table.",
+    "ar": "فشل في حذف الطاولة."
+  }
+}

@@ -1,0 +1,154 @@
+.table-manager {
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: white;
+  padding: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  width: 216px;
+}
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-button,
+.create-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #ccc;
+}
+
+.cancel-button:hover {
+  background-color: #bbb;
+}
+
+.create-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+
+.table-grid {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.table-card:hover {
+  border-color: #aaa;
+}
+
+.table-card.selected {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+
+.table-card {
+  position: relative;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  width: 180px;
+  background-color: white;
+}
+
+.table-card:hover {
+  border-color: #aaa;
+}
+
+.table-card.selected {
+  border-color: #007bff;
+  background-color: #e6f0ff;
+}
+
+/* Delete (X) button styling */
+.delete-button {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: white;
+  border: 1px solid #ccc;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  z-index: 1;
+}
+
+.delete-button:hover {
+  background-color: #ffe5e5;
+  border-color: red;
+}
