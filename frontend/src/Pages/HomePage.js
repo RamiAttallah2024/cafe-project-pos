@@ -11,11 +11,13 @@ function HomePage() {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/products");
+      const response = await fetch(
+        "https://cafe-project-pos.onrender.com/api/products"
+      );
       const data = await response.json();
       const updated = data.map((p) => ({
         ...p,
-        image: `http://localhost:5000/${p.image}`,
+        image: `https://cafe-project-pos.onrender.com/${p.image}`,
       }));
       setProducts(updated);
     } catch (error) {
@@ -26,7 +28,7 @@ function HomePage() {
   const handleDeleteProduct = async (productId) => {
     try {
       await fetch(
-        `http://localhost:5000/api/tables/${selectedTableId}/products/${productId}`,
+        `https://cafe-project-pos.onrender.com/api/tables/${selectedTableId}/products/${productId}`,
         {
           method: "DELETE",
         }
@@ -41,7 +43,7 @@ function HomePage() {
   const fetchTableProducts = async (tableId) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/tables/${tableId}/products`
+        `https://cafe-project-pos.onrender.com/api/tables/${tableId}/products`
       );
       const data = await response.json();
       setTableProducts(data);
@@ -68,7 +70,7 @@ function HomePage() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/tables/${selectedTableId}/add-product`,
+        `https://cafe-project-pos.onrender.com/api/tables/${selectedTableId}/add-product`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

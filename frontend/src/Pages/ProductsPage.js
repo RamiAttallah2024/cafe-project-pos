@@ -17,11 +17,13 @@ function ProductsPage() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch(
+          "https://cafe-project-pos.onrender.com/api/products"
+        );
         const data = await response.json();
         const updated = data.map((p) => ({
           ...p,
-          image: `http://localhost:5000/${p.image}`,
+          image: `https://cafe-project-pos.onrender.com/${p.image}`,
         }));
         setProducts(updated);
       } catch (error) {
@@ -56,10 +58,13 @@ function ProductsPage() {
     data.append("image", form.imageFile);
 
     try {
-      const response = await fetch("http://localhost:5000/api/products", {
-        method: "POST",
-        body: data,
-      });
+      const response = await fetch(
+        "https://cafe-project-pos.onrender.com/api/products",
+        {
+          method: "POST",
+          body: data,
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to add product");
@@ -70,7 +75,7 @@ function ProductsPage() {
         ...products,
         {
           ...newProduct,
-          image: `http://localhost:5000/${newProduct.image}`,
+          image: `https://cafe-project-pos.onrender.com/${newProduct.image}`,
         },
       ]);
 
@@ -86,7 +91,7 @@ function ProductsPage() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/products/${productId}`,
+        `https://cafe-project-pos.onrender.com/api/products/${productId}`,
         { method: "DELETE" }
       );
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Tables.css";
 import { useLanguage } from "../contexts/LanguageContext";
 
-const API_URL = "http://localhost:5000/api/tables";
+const API_URL = "https://cafe-project-pos.onrender.com/api/tables";
 
 export default function Tables({ selectedTableId, setSelectedTableId }) {
   const [tables, setTables] = useState([]);
