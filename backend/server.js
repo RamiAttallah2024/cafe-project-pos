@@ -1,4 +1,5 @@
 // Import required modules
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const productsRoutes = require("./routes/products");
@@ -17,7 +18,12 @@ const db = new Pool({
 const app = express();
 
 // Middleware setup
-app.use(cors()); // Enable CORS
+app.use(
+  cors({
+    origin: "https://cafe-project-pos.vercel.app", // Vercel frontend
+    credentials: true,
+  })
+); // Enable CORS
 app.use(express.json()); // Parse incoming JSON
 app.use("/uploads", express.static("uploads")); // Serve uploaded image files
 
