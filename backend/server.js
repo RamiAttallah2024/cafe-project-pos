@@ -13,6 +13,9 @@ const db = new Pool({
   database: "neondb",
   password: "npg_OeuhA3pw5QCN",
   port: 5432,
+  ssl: {
+    rejectUnauthorized: false, // ✅ this allows secure connection without cert verification
+  },
 });
 
 const app = express();
