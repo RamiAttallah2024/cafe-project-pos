@@ -9,10 +9,12 @@ function TableDetails({
 }) {
   const { t } = useLanguage();
 
-  const total = products.reduce(
-    (sum, product) => sum + (product.price * product.quantity || 0),
-    0
-  );
+  const total = Array.isArray(products)
+    ? products.reduce(
+        (sum, product) => sum + (product.price * product.quantity || 0),
+        0
+      )
+    : 0;
 
   return (
     <div className="table-details">
