@@ -17,13 +17,32 @@ const db = new Pool({
 
 const app = express();
 
-// Middleware setup
+const allowedOrigins = [
+  "https://cafe-project-pos.vercel.app",
+  "https://cafe-project-bsnztnzbr-ramiattallah2024s-projects.vercel.app",
+];
+
 app.use(
   cors({
-    origin: "https://cafe-project-pos.vercel.app", // Vercel frontend
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
-); // Enable CORS
+);
+
+// // Middleware setup
+// app.use(
+//   cors({
+//     origin:
+//       "https://cafe-project-bsnztnzbr-ramiattallah2024s-projects.vercel.app", // Vercel frontend
+//     credentials: true,
+//   })
+// ); // Enable CORS
 app.use(express.json()); // Parse incoming JSON
 app.use("/uploads", express.static("uploads")); // Serve uploaded image files
 
