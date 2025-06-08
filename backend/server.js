@@ -18,7 +18,7 @@ const db = new Pool({
 const app = express();
 
 const allowedOrigins = [
-  "https://cafe-project-pos.vercel.app",
+  "https://cafe-project-pos-git-main-ramiattallah2024s-projects.vercel.app",
   "https://cafe-project-bsnztnzbr-ramiattallah2024s-projects.vercel.app",
 ];
 
