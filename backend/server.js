@@ -8,10 +8,10 @@ const { Pool } = require("pg");
 
 // PostgreSQL database connection pool
 const db = new Pool({
-  user: "postgres",
-  host: "localhost",
-  database: "cafe_pos_3",
-  password: "123",
+  user: "neondb_owner",
+  host: "ep-floral-shadow-a8swo5ch-pooler.eastus2.azure.neon.tech",
+  database: "neondb",
+  password: "npg_OeuhA3pw5QCN",
   port: 5432,
 });
 
